@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hitastigsbreytir</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h1>Hitastigsbreytir</h1>
+
+    <div class="card">
+      <!-- HLUTI 2C: input fyrir nafn hér -->
+      <input id="name" type="text" placeholder="Nafn" />
+      <input id="celsius" type="number" placeholder="Hiti í °C" />
+
+      <!-- HLUTI 2A: input fyrir vind (m/s) hér -->
+      <input id="wind" type="number" placeholder="Vindur í m/s" />
+
+      <!-- HLUTI 2B: select fyrir °C → °F og °F → °C hér -->
+      <select id="direction">
+        <option value="CtoF">°C → °F</option>
+        <option value="FtoC">°F → °C</option>
+      </select>
+      <button onclick="convert()">Breyta</button>
+
+      <div id="output">Hér kemur niðurstaða...</div>
+    </div>
+  </body>
+</html>
